@@ -1,0 +1,123 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/Estilo.css">
+    <script type="text/javascript" language ="javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <title>Formulario - Banda</title>
+</head>
+    <body>
+        <center>
+        <h2>Cadastro</h2>
+        </center>
+    <hr>
+
+    <form action="saida.php" method="post" name="form1">
+        <div>
+                <center>
+                <table>
+                    <tr>
+                        <td>Nome da banda:</td>
+                    </tr>
+                    <td><input type="text" name="nomebanda"  id="input1"></td>
+                    <tr>
+                        <td><i>Link</i> para a Imagem :</td>
+                    </tr>
+                    <td><input type="text" name="imagembanda" id="input2"></td>
+                </table>
+                </center>
+        </div>   
+            <center>
+            <table>
+                <th>
+                    Integrante 1 - nome
+                </th>
+                <tr>
+                    <td><input type="text" name="nmintegrante0"></td>  
+                </tr>
+                <th>
+                    Integrante 1 - Instrumento
+                </th>
+                <tr>
+                    <td><input type="text" name="instrumento0"></td>
+                </tr>
+                <th>
+                    Integrante 1 - Data de Nascimento
+                </th>
+                    <tr>
+                        <td><input type="text" name="datanascimento0"></td>
+                    </tr>
+                <th>
+                    Integrante 2 - nome
+                </th>
+                <tr>
+                    <td><input type="text" name="nmintegrante1"></td>
+                </tr>
+                <th>
+                    Integrante 2 - Instrumento
+                </th>
+                <tr>
+                    <td><input type="text" name="instrumento1"></td>
+                </tr>
+                <th>
+                    Integrante 2 - Data de Nascimento
+                </th>
+                    <tr>
+                        <td><input type="text" name="datanascimento1"></td>
+                    </tr>
+                <th>
+                    Integrante 3 - nome
+                </th>
+                <tr>
+                    <td><input type="text" name="nmintegrante2"></td>
+                </tr>
+                <th>
+                    Integrante 3 - Instrumento
+                </th>
+                <tr>
+                    <td><input type="text" name="instrumento2"></td>
+                </tr>
+                <th>
+                    Integrante 3 - Data de Nascimento
+                </th>
+                    <tr>
+                        <td><input type="text" name="datanascimento2"></td>
+                    </tr>
+                <th>
+            </table>
+            </center>
+        <div>
+             <table>
+                <th>Biografia da banda:</th>
+                <tr>
+                    <td><textarea cols="30" rows="5" name="biografia" class="biografia"></textarea></td>
+                </tr>
+            </table>
+        </div><hr>
+        <center><div>
+            Cor de fundo da página:<br>
+                <select name="cordefundo">
+                    <option value="bkcorazul">Azul</option>
+                    <option value="bkcoramarelo">Amarelo</option>
+                    <option value="bkcorbranco">Branco</option>
+                    <option value="bkcorpreto">Preto</option>
+                    <option value="bkcorverde">Verde</option>
+                    <option value="bkcorvermelho">Vermelho</option>
+                </select><br><br>
+            Cor do texto da página:<br>
+                <select name="cordotexto">
+                    <option value="ftcorazul">Azul</option>
+                    <option value="ftcoramarelo">Amarelo</option>
+                    <option value="ftcorbranco">Branco</option>
+                    <option value="ftcorpreto">Preto</option>
+                    <option value="ftcorverde">Verde</option>
+                    <option value="ftcorvermelho">Vermelho</option>
+                </select><br>
+        </div></center><br>
+        <center>
+        <input type="submit" value="Gerar página" id="gerarpag">
+        </center>  
+</form>
+</body>
+</html>
